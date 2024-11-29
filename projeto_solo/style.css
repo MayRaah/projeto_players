@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: red;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    height: 150px;
+}
+
+
+.logo {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    padding: 10px 20px; 
+}
+
+.logo img {
+    width: 100px;
+    height: 140px;
+    padding-left: 30px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.logo span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: aliceblue;
+    padding: 60px 10px;
+    text-align: center;
+}
+
+.logo span:hover {
+    color: gold
+}
+
+
+.container {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 200;
+    color: aliceblue;
+}
+
+.container:hover {
+    color: gold;
+}
+
+.cards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cards-players {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.players {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: gold;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    align-items: center;
+}
+
+.players:hover {
+    transform: scale(1.02);
+}
+
+.rochet {
+    background-image:url(./assets/Rochet.png);
+}
+
+.vitao {
+    background-image: url(./assets/Vitão.jpg);
+}
+
+.mercado {
+    background-image: url(./assets/Mercado.png);
+}
+
+.bernabei {
+    background-image: url(./assets/Bernabei.png);
+}
+
+.bruno {
+    background-image: url(./assets/Bruno_Gomes.png);
+}
+
+.fernando {
+    background-image: url(./assets/Fernando.png);
+}
+
+.thiago {
+    background-image: url(./assets/Thiago.png);
+}
+
+.alan {
+    background-image: url(./assets/Alan_Patrick.png);
+}
+
+.wesley {
+    background-image: url(./assets/Wesley.jpg);
+}
+
+.enner {
+    background-image: url(./assets/Enner.png);
+}
+
+.borre {
+    background-image: url(./assets/Borre.png);
+}
+
+.roger {
+    background-image: url(./assets/Roger.png);
+}
+
+
+footer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: aliceblue; 
+    padding: 20px 20px;
+}
+
+footer:hover {
+    color: gold;
+}
+
+#botao{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#abrir-modal {
+    width: 230px;
+    height: 80px;
+    align-items: center;
+    padding: 2px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color:aliceblue;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.452);
+    cursor: pointer;
+}
+
+#abrir-modal:hover {
+    color: gold;
+    background-color: #B22222;
+    border-color: black;
+}
+
+#minha-modal {
+    width: 30%;
+    height: 80%;
+    position: relative;
+    margin-top: 100px;
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-bottom: 100px;
+    font-family: 'Monteserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    text-align: justify;
+    padding-bottom: 30px;
+}
+
+#minha-modal h2 {
+    color: black;
+}
+
+#minha-modal p {
+    color: black;
+    font-size: 1.2rem;
+}
+
+#fechar-modal {
+    width: 20px;
+    height: 20px;
+    margin-left: 417px;
+    margin-top: 5px;
+    border-radius: 50px;
+    color: aliceblue;
+    border-color: black;
+    cursor: pointer;
+    position: fixed
+}
+
+#fechar-modal:hover {
+    color: black;
+}
+
+hr {
+    width: 100%;
+    height: 4px;
+    background-color: rgba(240, 248, 255, 0.637);
+}
+
+#minha-modal::backdrop {
+    background-color: rgba(0, 0, 0, 0.468);
+}
